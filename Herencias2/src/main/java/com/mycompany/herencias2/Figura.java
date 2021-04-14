@@ -19,6 +19,18 @@ public abstract class Figura {
     
     public abstract void dibujar();
 
+    public boolean equals(Figura a){
+        if(this.nombre.equals(a.color)){
+            return true;
+        }return false;
+        
+    }
+
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre + ", GrosorBorde: " + grosorBorde + ", Color: " + color+ ", ";
+    }
+    
     public String getNombre() {
         return nombre;
     }

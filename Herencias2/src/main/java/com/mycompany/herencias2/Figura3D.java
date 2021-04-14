@@ -12,5 +12,10 @@ public abstract class Figura3D extends Figura{
         super(nombre, grosorBorde, color);
     }
     
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+    
     public abstract int calcularVolumen();
 }
