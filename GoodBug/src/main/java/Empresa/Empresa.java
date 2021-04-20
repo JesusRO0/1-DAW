@@ -1,5 +1,7 @@
 package Empresa;
 
+import Proyectos.ProyectoEmpresa;
+import java.util.Arrays;
 import java.util.Date;
 
 
@@ -9,13 +11,13 @@ public class Empresa {
     private String CIF;
     private String Localización;
     private Date fecha;
-    private Proyectos proyecto;
+    private ProyectoEmpresa[] proyecto;
     
     public Empresa(){
         
     }
 
-    public Empresa(String Nombre, String CIF, String Localización, Date fecha, Proyectos proyecto) {
+    public Empresa(String Nombre, String CIF, String Localización, Date fecha, ProyectoEmpresa[] proyecto) {
         this.Nombre = Nombre;
         this.CIF = CIF;
         this.Localización = Localización;
@@ -23,9 +25,12 @@ public class Empresa {
         this.proyecto = proyecto;
     }
 
+    
+
     public String toString() {
-        return "Nombre: " + Nombre + ", CIF: " + CIF + ", Localización: " + Localización + ", fecha: " + fecha + Proyectos proyecto+ "\n";
+        return "Nombre: " + Nombre + ", CIF: " + CIF + ", Localización: " + Localización + ", fecha: " + fecha + Arrays.toString(proyecto);
     }
+
     
     public boolean equals(Empresa a){
         if(this.CIF.equals(a.CIF)){
@@ -65,14 +70,12 @@ public class Empresa {
         this.fecha = fecha;
     }
 
-    public Proyectos getProyecto() {
+    public ProyectoEmpresa[] getProyecto() {
         return proyecto;
     }
 
-    public void setProyecto(Proyectos proyecto) {
+    public void setProyecto(ProyectoEmpresa[] proyecto) {
         this.proyecto = proyecto;
     }
-    
-    
 
 }
