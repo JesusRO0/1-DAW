@@ -19,12 +19,10 @@ public class ProyectoEmpresa extends Proyectos {
         this.ganancia = ganancia;
     }
 
-    
-
     public double Beneficio(){
         double beneficio;
         beneficio = ganancia - gastoProyecto;
-        return 0;
+        return beneficio;
     }
 
     public String toString() {

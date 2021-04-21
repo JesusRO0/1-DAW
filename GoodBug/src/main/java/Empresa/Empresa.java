@@ -25,8 +25,6 @@ public class Empresa {
         this.proyecto = proyecto;
     }
 
-    
-
     public String toString() {
         return "Nombre: " + Nombre + ", CIF: " + CIF + ", Localización: " + Localización + ", fecha: " + fecha + Arrays.toString(proyecto);
     }
