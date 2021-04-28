@@ -26,7 +26,7 @@ public class Empresa {
     }
 
     public String toString() {
-        return "Nombre: " + Nombre + ", CIF: " + CIF + ", Localización: " + Localización + ", fecha: " + fecha + Arrays.toString(proyecto);
+        return "Nombre: " + Nombre + ", CIF: " + CIF + ", Localización: " + Localización + ", fecha: " + fecha + Arrays.toString(proyecto)+"\n";
     }
 
     

@@ -27,7 +27,7 @@ public class Sonido extends Empleado{
     }
 
     public String toString() {
-        return super.toString() + "tipodemusica: " + tipodemusica + ", composiciones: " + composiciones + Arrays.toString(proyectoSonido);
+        return super.toString() + "tipodemusica: " + tipodemusica + ", composiciones: " + composiciones + Arrays.toString(proyectoSonido)+"\n";
     }
 
     public boolean equals(Sonido a){

@@ -26,7 +26,7 @@ public class ProyectoEmpresa extends Proyectos {
     }
 
     public String toString() {
-        return super.toString() + "idEmpresa: " + idEmpresa + "Gastos del proyecto: "+ gastoProyecto+ "Ganancias: "+ ganancia;
+        return super.toString() + "idEmpresa: " + idEmpresa + "Gastos del proyecto: "+ gastoProyecto+ "Ganancias: "+ ganancia+"\n";
     }
     
     public boolean equals(ProyectoEmpresa a){

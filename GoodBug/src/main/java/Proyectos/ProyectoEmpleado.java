@@ -10,7 +10,7 @@ public class ProyectoEmpleado extends Proyectos{
         
     }
 
-    public ProyectoEmpleado(int id, String NombreJuego, String Categoria, Date fechaSalida, int horasTrabajo, double Precio, boolean Estado, boolean Tipo) {
+    public ProyectoEmpleado(int idEmpleado, String NombreJuego, String Categoria, Date fechaSalida, int horasTrabajo, double Precio, boolean Estado, boolean Tipo) {
         super(NombreJuego, Categoria, fechaSalida, horasTrabajo, Precio, Estado, Tipo);
         this.idEmpleado = idEmpleado;
     }
@@ -22,7 +22,7 @@ public class ProyectoEmpleado extends Proyectos{
     }
     
     public String toString() {
-        return super.toString()+"idEmpleado: " + idEmpleado;
+        return super.toString()+"idEmpleado: " + idEmpleado+"\n";
     }
 
     public int getIdEmpleado() {

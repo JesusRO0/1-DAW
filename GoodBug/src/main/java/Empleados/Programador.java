@@ -26,7 +26,7 @@ public class Programador extends Empleado{
     }
 
     public String toString() {
-        return super.toString() + "Tipocodigo: " + Tipocodigo + Arrays.toString(proyectoProgramador);
+        return super.toString() + "Tipocodigo: " + Tipocodigo + Arrays.toString(proyectoProgramador)+"\n";
     }
 
     public String getTipocodigo() {
