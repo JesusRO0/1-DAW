@@ -1,6 +1,6 @@
 package Personajes;
 
-public class personaje {
+public abstract class personaje {
     
     private String Nombrepersonaje;
     private String Pueblonatal;

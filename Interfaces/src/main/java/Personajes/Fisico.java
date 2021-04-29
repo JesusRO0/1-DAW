@@ -1,11 +1,10 @@
 package Personajes;
 
 
-public interface Habilidades {
+public interface Fisico {
     
     public void atacar();
     public void defender();
-    public void poderes();
+    public void energia();
     public void talentos();
-    
 }
