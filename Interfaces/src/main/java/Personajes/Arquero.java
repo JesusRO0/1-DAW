@@ -35,7 +35,7 @@ public class Arquero extends personaje implements Hibrido{
     }
 
     public String toString() {
-        return super.toString() + "codigoArquero: " + pasiva;
+        return super.toString() + "Pasiva única: " + pasiva+"\n";
     }
     
     public boolean equals(Arquero a){
