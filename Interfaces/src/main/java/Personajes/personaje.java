@@ -19,7 +19,7 @@ public abstract class personaje {
     }
 
     public String toString() {
-        return "Nombre Personaje: " + Nombrepersonaje + ", Pueblonatal: " + Pueblonatal + ", Nivel: " + Nivel + ", Tipoequipamiento: " + Tipoequipamiento;
+        return "Nombre Personaje: " + Nombrepersonaje +"\n"+ "Pueblonatal: " + Pueblonatal +"\n"+ "Nivel: " + Nivel +"\n"+ "Tipoequipamiento: " + Tipoequipamiento+"\n";
     }
     
     public boolean equals(personaje a){

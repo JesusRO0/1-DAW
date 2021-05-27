@@ -14,7 +14,7 @@ public class Guerrero extends personaje implements Fisico{
     }
 
     public void atacar() {
-        System.out.println("El guerrero ataca a melee on una espada o un hacha");
+        System.out.println("El guerrero ataca a melee con una espada o un hacha");
     }
 
     public void defender() {
@@ -26,8 +26,25 @@ public class Guerrero extends personaje implements Fisico{
     }
 
     public void talentos() {
-        System.out.println("");
+        System.out.println("El guerrero posee talentos de vida y de ataque con armas a melee");
+    }
+
+    public String toString() {
+        return super.toString()+ "Pasiva única: " + pasiva+"\n";
     }
     
+    public boolean equals(Guerrero a){
+        if(this.pasiva.equals(a.pasiva)){
+            return true;
+        }return false;
+    }
+
+    public String getPasiva() {
+        return pasiva;
+    }
+
+    public void setPasiva(String pasiva) {
+        this.pasiva = pasiva;
+    }
     
 }
