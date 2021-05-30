@@ -1,7 +1,9 @@
 
 package Vehiculos;
 
-public class hormigonera extends maquinaria{
+import Interface.funBasico;
+
+public class hormigonera extends maquinaria implements funBasico{
     
     private String tipoMotor;
     
@@ -32,6 +34,16 @@ public class hormigonera extends maquinaria{
 
     public void setTipoMotor(String tipoMotor) {
         this.tipoMotor = tipoMotor;
+    }
+
+    @Override
+    public String movimiento() {
+        return " ";
+    }
+
+    @Override
+    public String descargar() {
+        return " ";
     }
 
 }
